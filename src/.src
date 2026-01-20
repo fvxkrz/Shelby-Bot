@@ -1,0 +1,7 @@
+import { ShelbyNodeClient } from "@shelby/sdk";
+import { Network } from "@aptos-labs/ts-sdk";
+
+export const shelby = new ShelbyNodeClient({
+  network: Network.SHELBYNET,
+  apiKey: process.env.SHELBY_API_KEY!,
+});
